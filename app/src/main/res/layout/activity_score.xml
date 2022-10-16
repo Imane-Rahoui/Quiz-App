@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Score"
+    android:layout_margin="30dp">
+<ImageView
+android:id="@+id/scoreimage"
+android:layout_width="200dp"
+android:layout_height="200dp"
+app:srcCompat="@drawable/score_pic"
+android:layout_gravity="center"/>
+
+<TextView
+android:id="@+id/quiz4title"
+android:layout_width="match_parent"
+android:layout_height="60dp"
+android:text="Votre Score est : "
+android:textSize="25dp"
+android:gravity="center"
+android:textStyle="bold"
+android:layout_marginBottom="10dp"/>
+
+    <com.github.lzyzsd.circleprogress.DonutProgress
+        android:id="@+id/donut_progress"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        app:donut_progress="30" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/scorelogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Logout"
+            android:backgroundTint="@color/grey"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:layout_marginRight="3dp"
+            />
+
+        <Button
+            android:id="@+id/scoreagain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Again"
+            android:backgroundTint="@color/grey"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="3dp"
+
+            />
+    </LinearLayout>
+</LinearLayout>

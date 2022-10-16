@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".register"
+    android:layout_margin="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/registerimage"
+        android:layout_width="178dp"
+        android:layout_height="212dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/register_pic" />
+
+    <EditText
+        android:id="@+id/registername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/registeremail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Email *"
+        android:drawableLeft="@drawable/email"
+        />
+
+    <EditText
+        android:id="@+id/registerpassword1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password *"
+        android:drawableLeft="@drawable/password"
+
+        />
+
+    <EditText
+        android:id="@+id/registerpassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        android:drawableLeft="@drawable/password"
+
+        />
+
+    <Button
+        android:id="@+id/registerregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:backgroundTint="@color/grey"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

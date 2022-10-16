@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Quiz4"
+    android:layout_margin="20dp"
+    >
+
+    <TextView
+        android:id="@+id/quiz4title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quiz 4"
+        android:textSize="30dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+
+        />
+
+    <ImageView
+        android:id="@+id/quiz4image"
+        android:layout_width="399dp"
+        android:layout_height="135dp"
+        app:srcCompat="@drawable/quiz4_pic" />
+
+    <TextView
+        android:id="@+id/quiz4quest"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Avant de partir, je laisse tourner mon moteur pour qu'il monte en température :"
+        android:textStyle="bold"
+
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/quiz4grp"
+
+        >
+
+        <RadioButton
+            android:id="@+id/quiz4radio1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Oui" />
+
+
+        <RadioButton
+            android:id="@+id/quiz4radio2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Non" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/quiz4next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:backgroundTint="@color/grey"
+        android:textColor="@color/black"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        />
+
+</LinearLayout>

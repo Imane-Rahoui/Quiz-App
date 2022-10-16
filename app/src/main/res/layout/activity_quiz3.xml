@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Quiz3"
+    android:layout_margin="20dp"
+    >
+
+    <TextView
+        android:id="@+id/quiz3title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quiz 3"
+        android:textSize="30dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+
+        />
+
+    <ImageView
+        android:id="@+id/quiz3image"
+        android:layout_width="399dp"
+        android:layout_height="135dp"
+        app:srcCompat="@drawable/quiz3_pic" />
+
+    <TextView
+        android:id="@+id/quiz3quest"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="En tant qu'automobiliste, vous devez entre plus vigilant lorsque :"
+        android:textStyle="bold"
+
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/quiz3grp"
+
+        >
+
+        <RadioButton
+            android:id="@+id/quiz3radio1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="le tramway est arrêté" />
+
+
+        <RadioButton
+            android:id="@+id/quiz3radio2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="le tramway circule" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/quiz3next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:backgroundTint="@color/grey"
+        android:textColor="@color/black"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        />
+
+</LinearLayout>

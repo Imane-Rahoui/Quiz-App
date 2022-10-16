@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Quiz5"
+    android:layout_margin="20dp"
+    >
+
+    <TextView
+        android:id="@+id/quiz5title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quiz 5"
+        android:textSize="30dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+
+        />
+
+    <ImageView
+        android:id="@+id/quiz5image"
+        android:layout_width="399dp"
+        android:layout_height="135dp"
+        app:srcCompat="@drawable/quiz5_pic" />
+
+    <TextView
+        android:id="@+id/quiz5quest"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="En conduisant, je peux utiliser mon portable pour écrire un texto ou composer un numéro : "
+        android:textStyle="bold"
+
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/quiz5grp"
+
+        >
+
+        <RadioButton
+            android:id="@+id/quiz5radio1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Oui" />
+
+
+        <RadioButton
+            android:id="@+id/quiz5radio2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Non" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/quiz5next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:backgroundTint="@color/grey"
+        android:textColor="@color/black"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        />
+
+</LinearLayout>

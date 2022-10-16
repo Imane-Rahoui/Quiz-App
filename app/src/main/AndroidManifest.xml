@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.iman.quizzapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/choose"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/choose"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuizzApp"
+        tools:replace="android:icon,android:theme">
+        <activity
+            android:name=".Score"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz5"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz4"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz3"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz2"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz1"
+            android:exported="false" />
+        <activity
+            android:name=".register"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
